@@ -126,8 +126,16 @@ app\Repositories\ProductRepository.php
 
 \public\storage\ProductsImages
 
+## Create product from cli with prompts
+
+\app\Console\Commands\CreateProduct.php
+
+#### php artisan product:create
 
 
+## testing
+
+php artisan test
 
 
 
