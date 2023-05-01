@@ -28,6 +28,9 @@ with 3 routes / home   &&  /products/create  &&  404 PageNotFound
 important used vue components : CreateProductForm && Product && ProductsList
 
 
+--> vue files already compiled using npm run build
+
+
 
 
 
@@ -80,9 +83,52 @@ important used vue components : CreateProductForm && Product && ProductsList
 
 
 
-## Acknowledgements
+## BACK-end info
 
- - [Awesome Readme Templates](https://awesomeopensource.com/project/elangosundar/awesome-README-templates)
- - [Awesome README](https://github.com/matiassingers/awesome-readme)
- - [How to write a Good readme](https://bulldogjob.com/news/449-how-to-write-a-good-readme-for-your-github-project)
+
+### create migration with seeds / factory
+
+php artisan db:seed
+
+#### factories ready to create categories and products :D
+
+
+## two controllers
+
+app\Http\Controllers\API\ProductContoller.php
+
+app\Http\Controllers\API\CategoryController.php
+
+
+## two Models
+
+app\Models\Product.php
+
+app\Models\Category.php
+
+
+## two Repositories
+
+app\Repositories\CategoryRepository.php
+
+app\Repositories\ProductRepository.php
+
+
+## one request 
+
+\app\Http\Requests\ProductRequest.php
+
+## one resource 
+
+\app\Http\Resources\ProductResource.php
+
+## Uploaded Products photos stored in
+
+\public\storage\ProductsImages
+
+
+
+
+
+
 
