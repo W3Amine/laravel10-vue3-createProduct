@@ -3,8 +3,6 @@ import ProductsPage from './pages/ProductsPage.vue';
 import CreateProductPage from './pages/CreateProductPage.vue';
 import PageNotFound from './pages/PageNotFound.vue';
 
-
-
 const routes = [
     {
       path: '/',
@@ -22,9 +20,6 @@ const routes = [
         component: PageNotFound
       },
   ]
-  
-
-  
   
 const router = createRouter({
     history: createWebHistory(),
