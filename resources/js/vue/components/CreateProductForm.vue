@@ -62,7 +62,7 @@ console.log(ServerErrors);
     </div>
     <div class="form-floating  my-2">
       <input type="number" v-model.number="form.price" name="price" class="form-control" id="price" placeholder="price">
-      <label for="price">Password</label>
+      <label for="price">price</label>
     </div>
 
     <select name="categories[]" multiple v-model="form.categories" class="form-select multiple form-select-lg mb-3">
