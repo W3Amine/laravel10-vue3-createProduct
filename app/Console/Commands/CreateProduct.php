@@ -11,14 +11,10 @@ use Illuminate\Support\Facades\Validator;
 
 class CreateProduct extends Command
 {
-    /**
-     * The name and signature of the console command.
-     */
+
     protected $signature = 'product:create';
 
-    /**
-     * The console command description.
-     */
+
     protected $description = 'Create a new product';
 
 
@@ -36,12 +32,7 @@ class CreateProduct extends Command
     }
 
 
-    
 
-
-    /**
-     * Execute the console command.
-     */
     public function handle()
     {
 
@@ -82,7 +73,6 @@ class CreateProduct extends Command
 
         ]);
 
-        // check if there is erros and return errors to the user
         if ($validator->fails()) {
             $this->error($validator->errors()->first());
             return;
@@ -103,11 +93,8 @@ class CreateProduct extends Command
             'image' => 'storage/' . $publicPath,
         ];
 
-
-        // create the product in the tables why repository injection :D
         $product = $this->productRepository->create($data , $categoriesArray );
 
-        // if everything is well say congratulations :D
         $this->info('Product created successfully. ID: ' . $product->id);
 
         return 0;
