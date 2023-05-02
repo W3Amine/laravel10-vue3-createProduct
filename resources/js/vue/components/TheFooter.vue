@@ -1,10 +1,7 @@
 
 
 <template>
-    <!-- Footer -->
-
     <footer class="text-center text-lg-start text-muted bg-primary mt-3">
-        <section class="">
             <div class="container text-center text-md-start pt-4 pb-4">
                 <div class="row mt-3 text-center">
                     <div class="col-6 col-sm-4 col-lg-4">
@@ -37,10 +34,5 @@
                 </div>
 
             </div>
-        </section>
-
     </footer>
-
-
-    <!-- Footer -->
 </template>
