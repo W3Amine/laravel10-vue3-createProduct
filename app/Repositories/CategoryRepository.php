@@ -10,9 +10,8 @@ class CategoryRepository
 {
     /**
      * Get all Categories.
-     *
-     * @return Collection
      */
+    
     public function getAll(): Collection
     {
         return Category::all();
@@ -22,12 +21,10 @@ class CategoryRepository
     {
          return  Category::with('products')->get();
     }
+    
 
     /**
      * Get a Category by ID.
-     *
-     * @param int $id
-     * @return Category
      */
     public function getById(int $id): Category
     {
@@ -38,9 +35,6 @@ class CategoryRepository
  
     /**
      * Delete a product.
-     *
-     * @param int $id
-     * @return void
      */
     public function delete(int $id): void
     {
