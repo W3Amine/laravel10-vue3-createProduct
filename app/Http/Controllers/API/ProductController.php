@@ -16,8 +16,6 @@ class ProductController extends Controller
 
     /**
      * The product repository instance.
-     *
-     * @var ProductRepository
      */
     protected ProductRepository $productRepository;
 
@@ -72,22 +70,13 @@ class ProductController extends Controller
 
 
     /**
-     * when the user filter with categories 
-     * he will get the products of each
-     * category he select
+     * categories filter
      */
     public function GetAllProductsOfCategories(Request $request)
     {
-      // if(is_array($categoryIds) ) {
 
-       // dd($request->ids);
             $products = $this->productRepository->GetAllProductsOfCategories($request->ids);
-
             return ProductResource::collection($products);
-      //  }
-        
-      //  return ;
-
     }
 
 
