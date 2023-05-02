@@ -1,6 +1,30 @@
 
 # Laravel vuejs RestApi
 
+install
+
+composer install
+create .env
+php artisan key:generate
+php artisan storage:link
+php artisan migrate
+
+before seeding please create this folder in the public folder "public/storage/ProductsImages/"   /ProductsImages/  very important to run seeders
+ now seed
+php artisan db:seed
+
+
+npm install
+ npm run build
+ 
+ 
+ now 
+ php artisan serve
+ 
+///////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+
+
 A brief description of what this project does and who it's for
 
 coded using laravel 10 & Vue 3 
