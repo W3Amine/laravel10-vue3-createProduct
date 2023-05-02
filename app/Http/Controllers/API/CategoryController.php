@@ -11,10 +11,8 @@ class CategoryController extends Controller
 
 
     
-        /**
+      /**
      * The Category repository instance.
-     *
-     * @var CategoryRepository
      */
     protected CategoryRepository $categoryRepository;
 
@@ -29,7 +27,7 @@ class CategoryController extends Controller
 
     
     /**
-     * Display a listing of the resource.
+     * Display a all listing of the resource.
      */
     public function index()
     {
