@@ -52,7 +52,7 @@ console.log(ServerErrors);
   </div>
 
 
-  <!-- Create product Form -->
+  <!-- product Form -->
   <form class="col-md-5 mx-auto my-5" @submit.prevent="saveProduct" enctype="multipart/form-data">
 
     <div class="form-floating my-2">
@@ -88,5 +88,5 @@ console.log(ServerErrors);
     <button type="submit" class="btn btn-lg btn-primary d-block mx-auto my-4 px-3 py-2"> create product </button>
 
   </form>
-  <!-- Create product Form -->
+  <!-- product Form -->
 </template>
