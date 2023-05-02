@@ -51,19 +51,11 @@ onMounted(() => {
     getCategoriesData();
 
 });
-
-
-
-
-
-
-
 </script>
 
 
 
 <template>
-
    <!-- sidebar + Products List -->
    <section class="">
         <div class="container">
@@ -93,17 +85,11 @@ onMounted(() => {
     </div>
     <!-- sidebar -->
 
-
-
     <!-- products List -->
     <div class="col-lg-9">
      
         <div class="row">
-      
-
-            <Product  v-for="product in products" v-bind="product" :key="product.id" @delete-product="deleteCompany" />
-
-            
+            <Product  v-for="product in products" v-bind="product" :key="product.id" @delete-product="deleteCompany" />       
         </div>
     </div>
     <!-- products List -->
