@@ -10,8 +10,6 @@ class ProductRepository
 {
     /**
      * Get all products.
-     *
-     * @return Collection
      */
     public function getAll(): Collection
     {
@@ -25,10 +23,8 @@ class ProductRepository
 
     /**
      * Get a product by ID.
-     *
-     * @param int $id
-     * @return Product
      */
+    
     public function getById(int $id): Product
     {
         return Product::findOrFail($id);
@@ -37,7 +33,6 @@ class ProductRepository
 
     /**
      * Get all products Of a category or more using IDs.
-     *
      */
     public function GetAllProductsOfCategories(array $categoryIds)
     {
@@ -57,9 +52,6 @@ class ProductRepository
 
     /**
      * Create a new product.
-     *
-     * @param array $data
-     * @return Product
      */
     public function create($data, $categoryIds): Product
     {
@@ -72,9 +64,6 @@ class ProductRepository
 
     /**
      * Delete a product.
-     *
-     * @param int $id
-     * @return void
      */
     public function delete(int $id): void
     {
