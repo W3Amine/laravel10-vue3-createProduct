@@ -5,10 +5,15 @@ namespace Database\Factories;
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Illuminate\Support\Str;
 
+<<<<<<< Updated upstream
 
 class UserFactory extends Factory
 {
 
+=======
+class UserFactory extends Factory
+{
+>>>>>>> Stashed changes
     public function definition(): array
     {
         return [
@@ -20,7 +25,10 @@ class UserFactory extends Factory
         ];
     }
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
     public function unverified(): static
     {
         return $this->state(fn (array $attributes) => [

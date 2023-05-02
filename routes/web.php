@@ -2,7 +2,10 @@
 
 use Illuminate\Support\Facades\Route;
 
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 Route::get('/', function () {
     return view('app');
 });

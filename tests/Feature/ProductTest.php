@@ -30,7 +30,6 @@ class ProductTest extends TestCase
         $response = $this->postJson('/api/products', $data);
 
         $response->assertStatus(201); // Ensure the response has a "created" status code
-     
 
         $this->assertDatabaseHas('products', [
             'name' => $data['name'],
@@ -41,6 +40,6 @@ class ProductTest extends TestCase
         $product = Product::where('name', $data['name'])->first();
         $this->assertNotNull($product->image); // Ensure the product has an image
 
-       Storage::disk('public')->assertExists($product->image_path); // Ensure the image was stored on the public disk
+        Storage::disk('public')->assertExists($product->image_path); // Ensure the image was stored on the public disk
     }
 }

@@ -5,7 +5,6 @@ namespace App\Repositories;
 use App\Models\Category;
 use Illuminate\Support\Collection;
 
-
 class CategoryRepository
 {
     /**
@@ -19,7 +18,7 @@ class CategoryRepository
 
     public function getAllWithProducts(): Collection
     {
-         return  Category::with('products')->get();
+        return Category::with('products')->get();
     }
     
 
@@ -31,8 +30,6 @@ class CategoryRepository
         return Category::findOrFail($id);
     }
 
-
- 
     /**
      * Delete a product.
      */

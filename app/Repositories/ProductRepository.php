@@ -5,7 +5,6 @@ namespace App\Repositories;
 use App\Models\Product;
 use Illuminate\Support\Collection;
 
-
 class ProductRepository
 {
     /**
@@ -30,7 +29,6 @@ class ProductRepository
         return Product::findOrFail($id);
     }
 
-
     /**
      * Get all products Of a category or more using IDs.
      */
@@ -44,12 +42,6 @@ class ProductRepository
         return $products;
     }
 
-
-
-
-
-
-
     /**
      * Create a new product.
      */
@@ -58,9 +50,9 @@ class ProductRepository
 
         $product = Product::create($data);
         $product->categories()->sync($categoryIds);
+
         return $product;
     }
-
 
     /**
      * Delete a product.

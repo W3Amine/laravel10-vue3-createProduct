@@ -2,16 +2,19 @@
 
 namespace App\Http\Controllers\API;
 
-use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
 use App\Repositories\CategoryRepository;
 
 class CategoryController extends Controller
 {
+<<<<<<< Updated upstream
 
 
     
       /**
+=======
+    /**
+>>>>>>> Stashed changes
      * The Category repository instance.
      */
     protected CategoryRepository $categoryRepository;
@@ -21,11 +24,6 @@ class CategoryController extends Controller
         $this->categoryRepository = $categoryRepository;
     }
 
-
-
-
-
-    
     /**
      * Display a all listing of the resource.
      */
@@ -35,19 +33,13 @@ class CategoryController extends Controller
 
     }
 
-
-
     /**
      * Remove the specified resource from storage.
      */
     public function destroy($product)
     {
         $this->categoryRepository->delete($product);
+
         return response()->noContent();
     }
-
-
-
-
-    
 }

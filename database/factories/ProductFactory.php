@@ -2,27 +2,30 @@
 
 namespace Database\Factories;
 
-use App\Models\Product;
 use App\Models\Category;
-use Faker\Generator as Faker;
+use App\Models\Product;
 use Illuminate\Database\Eloquent\Factories\Factory;
 
+<<<<<<< Updated upstream
 
 class ProductFactory extends Factory
 {
 
     
+=======
+class ProductFactory extends Factory
+{
+>>>>>>> Stashed changes
     public function definition()
     {
         return [
             'name' => $this->faker->name,
             'description' => $this->faker->sentence,
             'price' => $this->faker->randomFloat(2, 10, 100),
-            'image' => 'storage/ProductsImages/' . $this->faker->image('public/storage/ProductsImages/', 640, 480, null, false),
+            'image' => 'https://i.ibb.co/4py4Hvy/vue-logo.png',
         ];
-    
-    }
 
+    }
 
     public function configure()
     {
@@ -31,6 +34,9 @@ class ProductFactory extends Factory
             $product->categories()->sync($categories);
         });
     }
+<<<<<<< Updated upstream
 
     
+=======
+>>>>>>> Stashed changes
 }
