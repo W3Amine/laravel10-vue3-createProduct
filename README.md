@@ -1,6 +1,8 @@
 
 # Laravel vuejs RestApi
 
+### Laravel Pint PHP code style fixer used
+
 
 install
 
@@ -20,12 +22,6 @@ php artisan storage:link
 
 php artisan migrate
 
-before seeding please create this folder in the public folder "public/storage/ProductsImages/"   /ProductsImages/ 
-
-very important to run seeders
-
-now seed
-
 
 php artisan db:seed
 
@@ -35,10 +31,11 @@ npm install
 
 npm run build
  
+
  
- now 
+php artisan serve
  
- php artisan serve
+ 
  
 ///////////////////////////////////////////////////////////////////////////////////////////////////////////
 
