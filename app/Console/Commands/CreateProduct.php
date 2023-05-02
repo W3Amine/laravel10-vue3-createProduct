@@ -13,15 +13,11 @@ class CreateProduct extends Command
 {
     /**
      * The name and signature of the console command.
-     *
-     * @var string
      */
     protected $signature = 'product:create';
 
     /**
      * The console command description.
-     *
-     * @var string
      */
     protected $description = 'Create a new product';
 
@@ -32,9 +28,6 @@ class CreateProduct extends Command
     protected $productRepository;
     /**
      * Create a new command instance.
-     *
-     * @param  ProductRepository  $productRepository
-     * @return void
      */
     public function __construct(ProductRepository $productRepository)
     {
@@ -95,7 +88,6 @@ class CreateProduct extends Command
             return;
         }
         
-
       // upload the photo and change its name
         $fileName = basename($imagePath);
         $extension = pathinfo($imagePath, PATHINFO_EXTENSION);
