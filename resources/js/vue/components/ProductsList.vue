@@ -29,7 +29,6 @@ await getProductsData();
 
 
 
-// ########################################
 
 import getCategories from '../composables/categories';
 
@@ -53,7 +52,6 @@ onMounted(() => {
 
 });
 
-// #################################################
 
 
 
@@ -72,7 +70,6 @@ onMounted(() => {
             <div class="row">
 
 
-             <!-- ################ SIDE BAR ####################################### -->
                <!-- sidebar -->
     <div class="col-lg-3">
         <div class="card d-lg-block mb-5">
@@ -96,9 +93,6 @@ onMounted(() => {
     </div>
     <!-- sidebar -->
 
-
-           
-             <!-- ##################### SIDE BAR  ################################## -->
 
 
     <!-- products List -->
