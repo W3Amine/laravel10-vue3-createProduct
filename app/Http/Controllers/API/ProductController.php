@@ -61,7 +61,7 @@ class ProductController extends Controller
 
         ];
 
-        $product = $this->productRepository->create($dataToStore, explode(",", $request->categories[0]) ); // explode a string into array and create
+        $product = $this->productRepository->create($dataToStore, explode(",", $request->categories[0]) );
         return new ProductResource($product);
 
 
