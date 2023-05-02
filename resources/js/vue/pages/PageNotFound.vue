@@ -3,18 +3,11 @@
 import NavBar from '../components/NavBar.vue';
 import TheFooter from '../components/TheFooter.vue';
 import TheHeader from '../components/TheHeader.vue';
-
 </script>
 
-
-
 <template>
-
 <NavBar />
-
 <TheHeader TheTitle="404 page not found :("/>
-
-
 
 <div class="row mx-auto col-md-8">
                 <div class="col-md-6 mx-auto">
@@ -31,9 +24,6 @@ import TheHeader from '../components/TheHeader.vue';
                 </div>
 
         </div>
-
-
-
 <TheFooter />
 
 
