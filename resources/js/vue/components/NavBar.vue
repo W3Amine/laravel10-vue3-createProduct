@@ -1,7 +1,6 @@
 
 
 <template>
-<!-- navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container">
             <router-link class="navbar-brand" to="/">Navbar</router-link>
@@ -21,5 +20,4 @@
         </div>
     </nav>
 
-<!-- navbar -->
 </template>
