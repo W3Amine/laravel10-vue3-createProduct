@@ -11,7 +11,6 @@ defineProps({
 </script>
 
 <template>
-    <!-- Heading -->
     <header>
         <div class="bg-primary mb-4">
             <div class="container py-4">
@@ -19,5 +18,4 @@ defineProps({
             </div>
         </div>
     </header>
-    <!-- Heading -->
 </template>
